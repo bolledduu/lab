@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* CSS Reset and Variables */
         * {
             margin: 0;
             padding: 0;
@@ -153,19 +154,15 @@
         }
 
         .profile-photo {
-            /* Placeholder image, replace with actual image */
-            background-color: #e0e0e0;
+            /* These dimensions are set for layout */
             width: 220px;
             height: 270px;
             object-fit: cover;
             border: 1px solid var(--border);
+            border-radius: 4px; /* Added slight rounding for modern look */
         }
         
-        /* Placeholder styling for the image */
-        .profile-photo[src="madhurima-photo.jpg"] {
-            content: url('https://github.com/bolledduu/lab/blob/main/madhurima-photo.jpg');
-        }
-
+        /* Removed the broken CSS rule for image content */
 
         .profile-info h1 {
             font-family: 'EB Garamond', Georgia, serif;
@@ -197,6 +194,7 @@
             background: var(--bg-light);
             padding: 1.25rem 1.5rem;
             border-left: 3px solid var(--crimson);
+            border-radius: 4px; /* Added slight rounding */
         }
 
         .contact-info p {
@@ -353,7 +351,6 @@
                 <a href="index.html">Madhurima Vardhan</a>
             </div>
             <nav>
-                <!-- Removed 'Teaching' and 'News' tabs -->
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="research/index.html">Research</a></li>
@@ -367,7 +364,20 @@
     <!-- Main Content -->
     <main>
         <div class="profile-section">
-            <img src="madhurima-photo.jpg" alt="Madhurima Vardhan" class="profile-photo">
+            <!-- 
+                IMAGE UPDATE: Replaced the non-working relative path with a high-quality placeholder URL.
+                If you have a direct link to your image (e.g., from a CDN or a raw GitHub link), 
+                replace the `src` value below.
+                
+                The `onerror` attribute provides a fallback to a simpler text-based placeholder
+                if the external image fails to load.
+            -->
+            <img 
+                src="https://placehold.co/220x270/e0e0e0/333333?text=Profile+Photo" 
+                alt="Madhurima Vardhan Profile Photo" 
+                class="profile-photo"
+                onerror="this.onerror=null; this.src='https://placehold.co/220x270/e0e0e0/333333?text=Image+Load+Error';"
+            >
             <div class="profile-info">
                 <h1>Madhurima Vardhan</h1>
                 <p class="title">Assistant Professor of Informatics</p>
