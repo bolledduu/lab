@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab | Madhurima Vardhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --crimson: #990000;
+            --crimson-dark: #7a0000;
+            --charcoal: #2d2d2d;
+            --text: #3a3a3a;
+            --text-light: #666;
+            --bg-light: #faf9f7;
+            --border: #e5e2dd;
+            --white: #ffffff;
+        }
+        body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--white); }
+        a { color: var(--crimson); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--crimson-dark); text-decoration: underline; }
+        .top-bar { background: var(--charcoal); padding: 0.5rem 0; font-size: 0.8rem; }
+        .top-bar-container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; text-align: right; }
+        .top-bar a { color: rgba(255,255,255,0.7); margin-left: 1.5rem; }
+        .top-bar a:hover { color: #fff; text-decoration: none; }
+        header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .header-container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .site-title { padding: 1.25rem 0; }
+        .site-title a { font-family: 'EB Garamond', Georgia, serif; font-size: 1.6rem; font-weight: 500; color: var(--charcoal); letter-spacing: -0.01em; }
+        .site-title a:hover { text-decoration: none; color: var(--crimson); }
+        .nav-links { display: flex; list-style: none; gap: 0; }
+        .nav-links li { list-style: none; }
+        .nav-links li a { display: block; padding: 1.5rem 1.1rem; color: var(--text); font-size: 0.9rem; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -1px; transition: all 0.2s; }
+        .nav-links li a:hover { color: var(--crimson); text-decoration: none; }
+        .nav-links li a.active { color: var(--crimson); border-bottom-color: var(--crimson); }
+        main { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem; }
+        h2 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 500; color: var(--charcoal); margin-bottom: 1.25rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--crimson); }
+        h3 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 500; color: var(--charcoal); margin: 2rem 0 1rem; }
+        h4 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 600; color: var(--charcoal); }
+        p { margin-bottom: 1rem; color: var(--text); }
+        ul { margin-left: 1.25rem; margin-bottom: 1.25rem; }
+        li { margin-bottom: 0.6rem; color: var(--text); }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+        .team-member { background: var(--bg-light); padding: 1.25rem 1.5rem; }
+        .team-member h4 { margin-bottom: 0.25rem; }
+        .team-member .role { font-size: 0.9rem; color: var(--crimson); font-weight: 500; margin-bottom: 0.25rem; }
+        .team-member .info { font-size: 0.85rem; color: var(--text-light); }
+        footer { background: var(--charcoal); padding: 2rem; margin-top: 4rem; text-align: center; }
+        footer p { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin: 0; }
+        footer a { color: rgba(255,255,255,0.8); }
+        footer a:hover { color: #fff; }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; align-items: flex-start; }
+            .site-title { padding: 1rem 0 0.5rem; }
+            .nav-links { flex-wrap: wrap; width: 100%; padding-bottom: 0.5rem; }
+            .nav-links li a { padding: 0.6rem 0.8rem; font-size: 0.8rem; }
+            .top-bar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <a href="https://luddy.indiana.edu">Luddy School</a>
+            <a href="https://www.indiana.edu">Indiana University</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="site-title">
+                <a href="../index.html">Madhurima Vardhan</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../research/index.html">Research</a></li>
+                    <li><a href="../publications/index.html">Publications</a></li>
+                    <li><a href="../lab/index.html" class="active">Lab</a></li>
+                    <li><a href="../teaching/index.html">Teaching</a></li>
+                    <li><a href="../news/index.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Lab</h2>
+        <p>Our lab focuses on developing AI and high-performance computing solutions for healthcare applications. We are part of the Informatics department at the Luddy School.</p>
+
+        <h3>Prospective Students</h3>
+        <p>I am looking for motivated PhD students interested in AI for healthcare, computational modeling, and high-performance computing. If you are interested in joining our lab, please send me an email with your CV and research interests.</p>
+
+        <h3>Current Members</h3>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Madhurima Vardhan</h4>
+                <p class="role">Principal Investigator</p>
+                <p class="info">Assistant Professor</p>
+            </div>
+            <div class="team-member">
+                <h4>Open Position</h4>
+                <p class="role">PhD Student</p>
+                <p class="info">Contact if interested</p>
+            </div>
+            <div class="team-member">
+                <h4>Open Position</h4>
+                <p class="role">PhD Student</p>
+                <p class="info">Contact if interested</p>
+            </div>
+        </div>
+
+        <h3>Alumni</h3>
+        <p>Coming soon.</p>
+
+        <h3>Collaborators</h3>
+        <ul>
+            <li><a href="https://randleslab.pratt.duke.edu/">Randles Lab</a>, Duke University</li>
+            <li><a href="https://www.alcf.anl.gov/">Argonne Leadership Computing Facility</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Madhurima Vardhan &middot; <a href="https://luddy.indiana.edu">Luddy School</a> &middot; <a href="https://www.indiana.edu">Indiana University</a></p>
+    </footer>
+</body>
+</html>
