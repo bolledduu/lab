@@ -40,17 +40,54 @@
         h2 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 500; color: var(--charcoal); margin-bottom: 1.25rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--crimson); }
         h3 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 500; color: var(--charcoal); margin: 2rem 0 1rem; }
         p { margin-bottom: 1rem; color: var(--text); }
+        
+        /* Publication Styles */
         .publication { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
         .publication:last-child { border-bottom: none; }
-        .publication .pub-title { font-family: 'EB Garamond', Georgia, serif; font-size: 1.15rem; font-weight: 500; color: var(--charcoal); margin-bottom: 0.35rem; line-height: 1.4; }
-        .publication .authors { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.2rem; }
-        .publication .venue { font-size: 0.9rem; color: var(--text-light); font-style: italic; }
-        .publication .links { margin-top: 0.5rem; font-size: 0.85rem; }
-        .publication .links a { margin-right: 1rem; font-weight: 500; }
+        .publication .pub-title { 
+            font-family: 'EB Garamond', Georgia, serif; 
+            font-size: 1.1rem; 
+            font-weight: 500; 
+            color: var(--charcoal); 
+            margin-bottom: 0.4rem; 
+            line-height: 1.4; 
+        }
+        .publication .authors { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.25rem; }
+        .publication .authors strong { color: var(--charcoal); font-weight: 600; }
+        .publication .venue { font-size: 0.9rem; color: var(--text-light); font-style: italic; margin-bottom: 0.5rem; }
+        
+        /* Icon Links */
+        .pub-links { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .pub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text);
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        .pub-link:hover {
+            background: var(--crimson);
+            color: white;
+            border-color: var(--crimson);
+            text-decoration: none;
+        }
+        .pub-link svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        
         footer { background: var(--charcoal); padding: 2rem; margin-top: 4rem; text-align: center; }
         footer p { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin: 0; }
         footer a { color: rgba(255,255,255,0.8); }
         footer a:hover { color: #fff; }
+        
         @media (max-width: 768px) {
             .header-container { flex-direction: column; align-items: flex-start; }
             .site-title { padding: 1rem 0 0.5rem; }
@@ -90,41 +127,300 @@
         <h2>Publications</h2>
         <p>For a complete list, please see my <a href="https://scholar.google.com/citations?user=mZZ7XKgAAAAJ">Google Scholar</a> profile.</p>
 
-        <h3>Selected Publications</h3>
+        <h3>2025</h3>
 
         <div class="publication">
             <p class="pub-title">Simulation-based machine learning for real-time assessment of side-branch hemodynamics in coronary bifurcation lesions</p>
             <p class="authors">A. Ghorbannia, C. Tanade, A. Yousef, N.S. Khan, <strong>M. Vardhan</strong>, J.T. Chi, S. Roychowdhury, A. Das, J.A. Leopold, E.C. Chi, A. Randles</p>
-            <p class="venue">SAGE Publications, 2025</p>
-            <p class="links"><a href="#">[Paper]</a></p>
+            <p class="venue">The International Journal of High Performance Computing Applications, 2025</p>
+            <div class="pub-links">
+                <a href="https://journals.sagepub.com/doi/10.1177/10943420251351125" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://journals.sagepub.com/doi/pdf/10.1177/10943420251351125" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://journals.sagepub.com/doi/10.1177/10943420251351125" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
         </div>
 
         <div class="publication">
+            <p class="pub-title">Correction: Infusing behavior science into large language models for activity coaching</p>
+            <p class="authors"><strong>M. Vardhan</strong>, N. Hegde, D. Nathani, E. Rosenzweig, C. Speed, A. Karthikesalingam, M. Seneviratne</p>
+            <p class="venue">PLOS Digital Health, 2025</p>
+            <div class="pub-links">
+                <a href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000786" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000786" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2024</h3>
+
+        <div class="publication">
+            <p class="pub-title">Diagnostic Performance of Coronary Angiography Derived Computational Fractional Flow Reserve</p>
+            <p class="authors"><strong>M. Vardhan</strong>, C. Tanade, S.J. Chen, O. Mahmood, J. Chakravartti, W.S. Jones, A.M. Kahn, S. Vemulapalli, M. Patel, J.A. Leopold, A. Randles</p>
+            <p class="venue">Journal of the American Heart Association, 2024</p>
+            <div class="pub-links">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/38904250/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11255755/pdf/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/38904250/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Infusing behavior science into large language models for activity coaching</p>
+            <p class="authors"><strong>M. Vardhan</strong>, N. Hegde, D. Nathani, E. Rosenzweig, C. Speed, A. Karthikesalingam, M. Seneviratne</p>
+            <p class="venue">PLOS Digital Health, 2024</p>
+            <div class="pub-links">
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10986996/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10986996/pdf/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000431" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2023</h3>
+
+        <div class="publication">
+            <p class="pub-title">Optimizing Cloud Computing Resource Usage for Hemodynamic Simulation</p>
+            <p class="authors">W. Ladd, C. Jensen, <strong>M. Vardhan</strong>, J. Ames, J.R. Hammond, E.W. Draeger, A. Randles</p>
+            <p class="venue">IEEE International Parallel and Distributed Processing Symposium (IPDPS), 2023</p>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/10177423" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://ieeexplore.ieee.org/document/10177423" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2022</h3>
+
+        <div class="publication">
+            <p class="pub-title">Walking with PACE - Personalized and Automated Coaching Engine</p>
+            <p class="authors"><strong>M. Vardhan</strong>, N. Hegde, S. Merugu, S. Prabhat, D. Nathani, M. Seneviratne, N. Muhammad, P. Reddy, S. Lakshminarasimhan, R. Singh, K. Lorenzana, E. Motwani, P. Talukdar, A. Raghuveer</p>
+            <p class="venue">ACM Conference on User Modeling, Adaptation and Personalization (UMAP), 2022</p>
+            <div class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3503252.3531306" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://research.google/pubs/pub51330/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Propagation pattern for moment representation of the lattice Boltzmann method</p>
+            <p class="authors">J. Gounley, <strong>M. Vardhan</strong>, E.W. Draeger, P. Valero-Lara, S.V. Moore, A. Randles</p>
+            <p class="venue">IEEE Transactions on Parallel and Distributed Systems, 2022</p>
+            <div class="pub-links">
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9053389/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9053389/pdf/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://ieeexplore.ieee.org/document/9492124" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">The Role of Immersion for Improving Extended Reality Analysis of Personalized Flow Simulations</p>
+            <p class="authors">H. Shi, <strong>M. Vardhan</strong>, A. Randles</p>
+            <p class="venue">Cardiovascular Engineering and Technology, 2022</p>
+            <div class="pub-links">
+                <a href="https://link.springer.com/article/10.1007/s13239-022-00646-y" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://link.springer.com/article/10.1007/s13239-022-00646-y" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2021</h3>
+
+        <div class="publication">
             <p class="pub-title">An interpretable machine learning model to classify coronary bifurcation lesions</p>
-            <p class="authors">X. Liu, <strong>M. Vardhan</strong>, Q. Wen, et al.</p>
+            <p class="authors">X. Liu, <strong>M. Vardhan</strong>, Q. Wen, A. Das, A. Randles</p>
             <p class="venue">IEEE Engineering in Medicine & Biology Society (EMBC), 2021</p>
-            <p class="links"><a href="#">[Paper]</a></p>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/9629996" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://ieeexplore.ieee.org/document/9629996" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Improving Coronary Artery Disease Diagnostics with Massively Parallel, Personalized Flow Models and Immersive Treatment Planning</p>
+            <p class="authors"><strong>M. Vardhan</strong></p>
+            <p class="venue">Ph.D. Dissertation, Duke University, 2021</p>
+            <div class="pub-links">
+                <a href="https://dukespace.lib.duke.edu/items/363e7877-d780-44c6-83d0-6b050c7112b4" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://dukespace.lib.duke.edu/items/363e7877-d780-44c6-83d0-6b050c7112b4" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://dukespace.lib.duke.edu/items/363e7877-d780-44c6-83d0-6b050c7112b4" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2019</h3>
+
+        <div class="publication">
+            <p class="pub-title">Moment representation in the lattice Boltzmann method on massively parallel hardware</p>
+            <p class="authors"><strong>M. Vardhan</strong>, J. Gounley, L. Hegele, E.W. Draeger, A. Randles</p>
+            <p class="venue">ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2019</p>
+            <div class="pub-links">
+                <a href="https://dl.acm.org/doi/10.1145/3295500.3356220" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://dl.acm.org/doi/10.1145/3295500.3356220" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Investigating the Role of VR in a Simulation-Based Medical Planning System for Coronary Interventions</p>
+            <p class="authors"><strong>M. Vardhan</strong>, H. Shi, J. Gounley, S.J. Chen, A. Kahn, J.A. Leopold, A. Randles</p>
+            <p class="venue">Medical Image Computing and Computer Assisted Intervention (MICCAI), 2019</p>
+            <div class="pub-links">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-32254-0_41" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-030-32254-0_41" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">A framework for comparing vascular hemodynamics at different points in time</p>
+            <p class="authors">J. Gounley, <strong>M. Vardhan</strong>, A. Randles</p>
+            <p class="venue">Computer Physics Communications, 2019</p>
+            <div class="pub-links">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0010465518303540" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0010465518303540" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Suitability of lattice Boltzmann inlet and outlet boundary conditions for simulating flow in image-derived vasculature</p>
+            <p class="authors">B. Feiger*, <strong>M. Vardhan*</strong>, J. Gounley, M. Mortensen, P. Nair, R. Chaudhury, D. Frakes, A. Randles (*equal contribution)</p>
+            <p class="venue">International Journal for Numerical Methods in Biomedical Engineering, 2019</p>
+            <div class="pub-links">
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605305/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605305/pdf/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/></svg>
+                    PDF
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/30838793/" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
+        </div>
+
+        <h3>2018</h3>
+
+        <div class="publication">
+            <p class="pub-title">Computational Fluid Modeling to Understand the Role of Anatomy in Bifurcation Lesion Disease</p>
+            <p class="authors"><strong>M. Vardhan</strong>, A. Das, J. Gouruev, A. Randles</p>
+            <p class="venue">IEEE/ACM International Conference on High Performance Computing (HiPC) Workshops, 2018</p>
+            <div class="pub-links">
+                <a href="https://ieeexplore.ieee.org/document/8638167" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://ieeexplore.ieee.org/document/8638167" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
         </div>
 
         <div class="publication">
             <p class="pub-title">Application of physics-based flow models in cardiovascular medicine: Current practices and challenges</p>
-            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
-            <p class="venue">Journal of Cardiovascular Medicine</p>
-            <p class="links"><a href="#">[Paper]</a></p>
+            <p class="authors"><strong>M. Vardhan</strong>, J. Gounley, S. Hegele, E.W. Draeger, A. Randles</p>
+            <p class="venue">Annual Review of Biomedical Engineering</p>
+            <div class="pub-links">
+                <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-bioeng-082322-033318" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/></svg>
+                    Abstract
+                </a>
+                <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-bioeng-082322-033318" class="pub-link">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Webpage
+                </a>
+            </div>
         </div>
 
-        <div class="publication">
-            <p class="pub-title">Suitability of lattice Boltzmann inlet and outlet boundary conditions for simulating flow in patient-specific vasculature</p>
-            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
-            <p class="venue">International Journal for Numerical Methods in Biomedical Engineering</p>
-            <p class="links"><a href="#">[Paper]</a></p>
-        </div>
-
-        <div class="publication">
-            <p class="pub-title">Deriving Fractional Flow Reserve (FFR) from Routine Angiogram-Based Fluid Simulations</p>
-            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
-            <p class="venue">BMES Annual Meeting, 2018 (Student Design and Research Award)</p>
-        </div>
     </main>
 
     <footer>
