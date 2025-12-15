@@ -153,11 +153,19 @@
         }
 
         .profile-photo {
+            /* Placeholder image, replace with actual image */
+            background-color: #e0e0e0;
             width: 220px;
             height: 270px;
             object-fit: cover;
             border: 1px solid var(--border);
         }
+        
+        /* Placeholder styling for the image */
+        .profile-photo[src="madhurima-photo.jpg"] {
+            content: url('https://placehold.co/220x270/e0e0e0/3a3a3a?text=Profile+Photo');
+        }
+
 
         .profile-info h1 {
             font-family: 'EB Garamond', Georgia, serif;
@@ -345,13 +353,12 @@
                 <a href="index.html">Madhurima Vardhan</a>
             </div>
             <nav>
+                <!-- Removed 'Teaching' and 'News' tabs -->
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="research/index.html">Research</a></li>
                     <li><a href="publications/index.html">Publications</a></li>
                     <li><a href="lab/index.html">Lab</a></li>
-                    <li><a href="teaching/index.html">Teaching</a></li>
-                    <li><a href="news/index.html">News</a></li>
                 </ul>
             </nav>
         </div>
@@ -391,6 +398,14 @@
             <p>
                 I received my Ph.D. in Biomedical Engineering from Duke University, where I developed massively parallel computational fluid dynamic algorithms for cardiovascular disease diagnosis under the supervision of Prof. Amanda Randles.
             </p>
+
+            <!-- New Courses Section Added Here -->
+            <h3>Courses Taught (I will update this later)</h3>
+            <ul>
+                <li>Data Visualization (INFO I590) - Graduate/Advanced Undergraduate</li>
+                <li>Health Informatics and AI (INFO I450) - Undergraduate</li>
+                <li>High-Performance Computing for Biomedical Applications (BME 790) - Graduate</li>
+            </ul>
 
             <h3>Selected Awards</h3>
             <ul>
