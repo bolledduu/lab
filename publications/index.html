@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Madhurima Vardhan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --crimson: #990000;
+            --crimson-dark: #7a0000;
+            --charcoal: #2d2d2d;
+            --text: #3a3a3a;
+            --text-light: #666;
+            --bg-light: #faf9f7;
+            --border: #e5e2dd;
+            --white: #ffffff;
+        }
+        body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--white); }
+        a { color: var(--crimson); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--crimson-dark); text-decoration: underline; }
+        .top-bar { background: var(--charcoal); padding: 0.5rem 0; font-size: 0.8rem; }
+        .top-bar-container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; text-align: right; }
+        .top-bar a { color: rgba(255,255,255,0.7); margin-left: 1.5rem; }
+        .top-bar a:hover { color: #fff; text-decoration: none; }
+        header { background: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        .header-container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .site-title { padding: 1.25rem 0; }
+        .site-title a { font-family: 'EB Garamond', Georgia, serif; font-size: 1.6rem; font-weight: 500; color: var(--charcoal); letter-spacing: -0.01em; }
+        .site-title a:hover { text-decoration: none; color: var(--crimson); }
+        .nav-links { display: flex; list-style: none; gap: 0; }
+        .nav-links li { list-style: none; }
+        .nav-links li a { display: block; padding: 1.5rem 1.1rem; color: var(--text); font-size: 0.9rem; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; border-bottom: 3px solid transparent; margin-bottom: -1px; transition: all 0.2s; }
+        .nav-links li a:hover { color: var(--crimson); text-decoration: none; }
+        .nav-links li a.active { color: var(--crimson); border-bottom-color: var(--crimson); }
+        main { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem; }
+        h2 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.8rem; font-weight: 500; color: var(--charcoal); margin-bottom: 1.25rem; padding-bottom: 0.6rem; border-bottom: 2px solid var(--crimson); }
+        h3 { font-family: 'EB Garamond', Georgia, serif; font-size: 1.3rem; font-weight: 500; color: var(--charcoal); margin: 2rem 0 1rem; }
+        p { margin-bottom: 1rem; color: var(--text); }
+        .publication { padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+        .publication:last-child { border-bottom: none; }
+        .publication .pub-title { font-family: 'EB Garamond', Georgia, serif; font-size: 1.15rem; font-weight: 500; color: var(--charcoal); margin-bottom: 0.35rem; line-height: 1.4; }
+        .publication .authors { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.2rem; }
+        .publication .venue { font-size: 0.9rem; color: var(--text-light); font-style: italic; }
+        .publication .links { margin-top: 0.5rem; font-size: 0.85rem; }
+        .publication .links a { margin-right: 1rem; font-weight: 500; }
+        footer { background: var(--charcoal); padding: 2rem; margin-top: 4rem; text-align: center; }
+        footer p { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin: 0; }
+        footer a { color: rgba(255,255,255,0.8); }
+        footer a:hover { color: #fff; }
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; align-items: flex-start; }
+            .site-title { padding: 1rem 0 0.5rem; }
+            .nav-links { flex-wrap: wrap; width: 100%; padding-bottom: 0.5rem; }
+            .nav-links li a { padding: 0.6rem 0.8rem; font-size: 0.8rem; }
+            .top-bar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <a href="https://luddy.indiana.edu">Luddy School</a>
+            <a href="https://www.indiana.edu">Indiana University</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="site-title">
+                <a href="../index.html">Madhurima Vardhan</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../research/index.html">Research</a></li>
+                    <li><a href="../publications/index.html" class="active">Publications</a></li>
+                    <li><a href="../lab/index.html">Lab</a></li>
+                    <li><a href="../teaching/index.html">Teaching</a></li>
+                    <li><a href="../news/index.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Publications</h2>
+        <p>For a complete list, please see my <a href="https://scholar.google.com/citations?user=mZZ7XKgAAAAJ">Google Scholar</a> profile.</p>
+
+        <h3>Selected Publications</h3>
+
+        <div class="publication">
+            <p class="pub-title">Simulation-based machine learning for real-time assessment of side-branch hemodynamics in coronary bifurcation lesions</p>
+            <p class="authors">A. Ghorbannia, C. Tanade, A. Yousef, N.S. Khan, <strong>M. Vardhan</strong>, J.T. Chi, S. Roychowdhury, A. Das, J.A. Leopold, E.C. Chi, A. Randles</p>
+            <p class="venue">SAGE Publications, 2025</p>
+            <p class="links"><a href="#">[Paper]</a></p>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">An interpretable machine learning model to classify coronary bifurcation lesions</p>
+            <p class="authors">X. Liu, <strong>M. Vardhan</strong>, Q. Wen, et al.</p>
+            <p class="venue">IEEE Engineering in Medicine & Biology Society (EMBC), 2021</p>
+            <p class="links"><a href="#">[Paper]</a></p>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Application of physics-based flow models in cardiovascular medicine: Current practices and challenges</p>
+            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
+            <p class="venue">Journal of Cardiovascular Medicine</p>
+            <p class="links"><a href="#">[Paper]</a></p>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Suitability of lattice Boltzmann inlet and outlet boundary conditions for simulating flow in patient-specific vasculature</p>
+            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
+            <p class="venue">International Journal for Numerical Methods in Biomedical Engineering</p>
+            <p class="links"><a href="#">[Paper]</a></p>
+        </div>
+
+        <div class="publication">
+            <p class="pub-title">Deriving Fractional Flow Reserve (FFR) from Routine Angiogram-Based Fluid Simulations</p>
+            <p class="authors"><strong>M. Vardhan</strong>, et al.</p>
+            <p class="venue">BMES Annual Meeting, 2018 (Student Design and Research Award)</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Madhurima Vardhan &middot; <a href="https://luddy.indiana.edu">Luddy School</a> &middot; <a href="https://www.indiana.edu">Indiana University</a></p>
+    </footer>
+</body>
+</html>
