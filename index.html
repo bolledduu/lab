@@ -159,11 +159,9 @@
             height: 270px;
             object-fit: cover;
             border: 1px solid var(--border);
-            border-radius: 4px; /* Added slight rounding for modern look */
+            border-radius: 4px; 
         }
         
-        /* Removed the broken CSS rule for image content */
-
         .profile-info h1 {
             font-family: 'EB Garamond', Georgia, serif;
             font-size: 2.4rem;
@@ -194,7 +192,7 @@
             background: var(--bg-light);
             padding: 1.25rem 1.5rem;
             border-left: 3px solid var(--crimson);
-            border-radius: 4px; /* Added slight rounding */
+            border-radius: 4px; 
         }
 
         .contact-info p {
@@ -365,18 +363,14 @@
     <main>
         <div class="profile-section">
             <!-- 
-                IMAGE UPDATE: Replaced the non-working relative path with a high-quality placeholder URL.
-                If you have a direct link to your image (e.g., from a CDN or a raw GitHub link), 
-                replace the `src` value below.
-                
-                The `onerror` attribute provides a fallback to a simpler text-based placeholder
-                if the external image fails to load.
+                IMAGE FIX: The source URL has been corrected to point to the raw image file on GitHub, 
+                not the GitHub page that views the file.
             -->
             <img 
-                src="https://placehold.co/220x270/e0e0e0/333333?text=Profile+Photo" 
+                src="https://raw.githubusercontent.com/bolledduu/lab/main/madhurima-photo.jpg" 
                 alt="Madhurima Vardhan Profile Photo" 
                 class="profile-photo"
-                onerror="this.onerror=null; this.src='https://placehold.co/220x270/e0e0e0/333333?text=Image+Load+Error';"
+                onerror="this.onerror=null; this.src='https://placehold.co/220x270/e0e0e0/333333?text=Image+Unavailable';"
             >
             <div class="profile-info">
                 <h1>Madhurima Vardhan</h1>
@@ -410,7 +404,7 @@
             </p>
 
             <!-- New Courses Section Added Here -->
-            <h3>Courses Taught (I will update this later)</h3>
+            <h3>Courses Taught (I will update this later) </h3>
             <ul>
                 <li>Data Visualization (INFO I590) - Graduate/Advanced Undergraduate</li>
                 <li>Health Informatics and AI (INFO I450) - Undergraduate</li>
